@@ -6,14 +6,17 @@ public class PaisVizinho {
     public PaisVizinho() {
 
     }
-    private Set<PaisVizinho> vizinho = new HashSet<>();
-    public void VizinhoBrasil(PaisVizinho p1){
-        this.vizinho.add(p1);
-        p1.vizinho.add(this);
+    private Set<String> vizinho = new HashSet<>();
+    public void VizinhoBrasil(){
+        this.vizinho.add("Uruguai");
+        this.vizinho.add("Paraguai");
+        this.vizinho.add("Argentina");
+        this.vizinho.add("Colombia");
+
     }
 
     public void mostraPaisVizinho(){
-        for(PaisVizinho p : vizinho){
+        for(String p : vizinho){
             System.out.println("Países Vizinhos: " +p);
         }
     }
@@ -25,7 +28,6 @@ public class PaisVizinho {
             System.out.println("Ele não é vizinho");
         }
     }
+
 }
-  //  public void adicionarVizinho(Pais p1) {
-    //    this.vizinhos.add(p1);
-      //  p1.vizinhos.add(this);
+ 

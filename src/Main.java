@@ -7,7 +7,7 @@ public class Main {
 
         Brasil b1 = new Brasil(3166-1,"Brasil",1939463886,8515767.049);
 
-      //  p1.VizinhoBrasil();
+        p1.VizinhoBrasil();
 
 
         System.out.println("Digite um pais para saber se é vizinho");
@@ -17,7 +17,7 @@ public class Main {
         p1.verificaVizinho(pais);
 
         b1.densidadePopulacional();
-       // p1.mostraPaisVizinho();
+        p1.mostraPaisVizinho();
 
 
 
